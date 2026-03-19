@@ -16,7 +16,7 @@ dependency:
 ## 前置准备
 - 依赖说明：需要安装阿里邮箱SDK
   ```bash
-  npm install -g alimail-node-sdk
+  npm install alimail-node-sdk
   ```
 
 ## 操作步骤
