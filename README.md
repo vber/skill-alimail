@@ -11,7 +11,7 @@
 
 2. **安装依赖**
    ```bash
-   npm install -g alimail-node-sdk
+   npm install alimail-node-sdk
    ```
 
 ## ✨ 主要功能
