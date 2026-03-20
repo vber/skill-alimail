@@ -1,9 +1,14 @@
 ---
 name: alimail-manager
 description: 提供阿里邮箱API调用能力，支持用户信息查询、邮件详情获取、邮件搜索；当用户需要查询企业邮箱用户信息、查看特定邮件内容、搜索符合条件的邮件时使用
+required_env:
+  - ALMAIL_APP_ID
+  - ALMAIL_SECRET
+auth:
+  type: oauth2_client_credentials
 dependency:
   system:
-    - npm install -g alimail-node-sdk
+    - npm install alimail-node-sdk
 ---
 
 # 阿里邮箱管理
@@ -18,6 +23,10 @@ dependency:
   ```bash
   npm install alimail-node-sdk
   ```
+- 认证方式：OAuth2 `client_credentials`
+- 必填环境变量：
+  - `ALMAIL_APP_ID`：阿里邮箱应用 ID
+  - `ALMAIL_SECRET`：阿里邮箱应用 Secret
 
 ## 操作步骤
 
@@ -47,7 +56,7 @@ dependency:
 ## 注意事项
 
 - 邮件搜索支持KQL查询语法，详见参考文档
-- 使用时需要配置阿里邮箱的APP_ID和APP_SECRET环境变量
+- 使用时必须配置 `ALMAIL_APP_ID` 和 `ALMAIL_SECRET`
 
 ## 使用示例
 

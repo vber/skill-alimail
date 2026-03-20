@@ -7,7 +7,7 @@ const path = require('path');
 /**
  * 创建阿里邮箱客户端
  * 
- * 授权方式: ApiKey
+ * 授权方式: OAuth2 client_credentials（由 SDK 内部处理令牌申请）
  * 凭证环境变量: ALMAIL_APP_ID, ALMAIL_SECRET
  */
 function createClient() {

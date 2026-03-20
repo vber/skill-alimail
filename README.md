@@ -6,14 +6,16 @@
 
 1. **环境变量**
    使用前需配置阿里邮箱的环境变量：
-   - `APP_ID`：阿里邮箱应用 ID
-   - `APP_SECRET`：阿里邮箱应用 Secret
+   - `ALMAIL_APP_ID`：阿里邮箱应用 ID
+   - `ALMAIL_SECRET`：阿里邮箱应用 Secret
 
-2. **安装依赖**
+2. **认证方式**
+   当前使用 OAuth2 `client_credentials` 流程，由 `alimail-node-sdk` 在请求时处理令牌申请。
+
+3. **安装依赖**
    ```bash
    npm install alimail-node-sdk
    ```
-
 ## ✨ 主要功能
 
 - **用户信息查询** (`scripts/get_user.js`)：获取邮箱用户的详细资料（支持选择扩展字段）
